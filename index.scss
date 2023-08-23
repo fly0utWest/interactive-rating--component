@@ -85,3 +85,58 @@ main {
   color: #fff;
   font-size: rem(20);
 }
+
+.rating-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &__rate {
+    margin-bottom: rem(15);
+  }
+
+  &__submit {
+    transition: .2s;
+    color: #fff;
+    background-color: var(--orange);
+    border: none;
+    padding: rem(10);
+    border-radius: rem(12);
+    cursor: pointer;
+    text-transform: uppercase;
+
+    &:hover {
+      transition: .2s;
+      color: var(--orange);
+      background-color: #fff;
+    }
+  }
+}
+
+.rate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+
+  &__button {
+    transition: .2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(48);
+    color: var(--mediumgrey);
+    height: rem(48);
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      transition: .2s;
+      background-color: var(--lightgrey);
+      color: #fff;
+    } 
+  }
+}
