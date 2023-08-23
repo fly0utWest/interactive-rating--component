@@ -20,6 +20,8 @@
 
     <link rel="stylesheet" href="./index.css" />
 
+    <script defer src="./index.js"></script>
+
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
@@ -35,14 +37,28 @@
         </p>
         <form class="rating-form" action="">
           <div class="rate rating-form__rate">
-            <button class="rate__button">1</button>
-            <button class="rate__button">2</button>
-            <button class="rate__button">3</button>
-            <button class="rate__button">4</button>
-            <button class="rate__button">5</button>
+            <button id="1" class="rate__button">1</button>
+            <button id="2" class="rate__button">2</button>
+            <button id="3" class="rate__button">3</button>
+            <button id="4" class="rate__button">4</button>
+            <button id="5" class="rate__button">5</button>
           </div>
           <button type="submit" class="rating-form__submit">Submit</button>
         </form>
+      </div>
+      <div class="response-tab">
+        <div class="response-tab__image">
+          <img src="./images/illustration-thank-you.svg" alt="" />
+        </div>
+        <div class="rating-choice">
+          <p class="rating-choice__message">You selected <span class="grade"></span> out of 5</p>
+        </div>
+          <h1 class="thankyou-heading">Thank you!</h1>
+          <p class="response-tab__text">
+            We appreciate you taking the time to give a rating, if you ever need
+            more support, don't hesitate to get in touch
+          </p>
+        </div>
       </div>
     </main>
   </body>

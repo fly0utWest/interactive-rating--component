@@ -26,6 +26,9 @@ body {
 
 p {
   font-size: 0.9375rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 main {
@@ -40,7 +43,7 @@ main {
 }
 
 .rating-tab {
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 100%;
   height: 100%;
@@ -98,6 +101,10 @@ main {
   color: var(--orange);
   background-color: #fff;
 }
+.rating-form__submit:active {
+  background-color: #fff;
+  color: var(--orange);
+}
 
 .rate {
   display: flex;
@@ -123,4 +130,32 @@ main {
   transition: 0.2s;
   background-color: var(--lightgrey);
   color: #fff;
+}
+.rate__button:active {
+  background-color: var(--orange);
+  color: #fff;
+}
+
+.response-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+.response-tab__text {
+  color: var(--mediumgrey);
+  font-size: 0.9375rem;
+}
+
+.thankyou-heading {
+  color: #fff;
+}
+
+.rating-choice {
+  background-color: var(--darkblue);
+}
+.rating-choice__message {
+  color: var(--orange);
 }
