@@ -50,7 +50,7 @@ main {
 }
 
 .rating-tab {
-  display: none;
+  display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
@@ -149,11 +149,16 @@ main {
       background-color: var(--orange);
       color: #fff;
     }
+
+    &_checked {
+      background-color: var(--orange);
+      color: #fff;
+    }
   }
 }
 
 .response-tab {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   width: 100%;
@@ -163,15 +168,35 @@ main {
   &__text {
     color: var(--mediumgrey);
     font-size: rem(15);
+    margin-top: rem(15);
+    text-align: center;
+  }
+
+  &__image {
+    width: rem(150);
+    height: rem(100);
+    margin-bottom: rem(15);
+    
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__rating-choice {
+    margin-bottom: rem(25);
   }
 }
 
 .thankyou-heading {
+  font-size: rem(20);
   color: #fff;
 }
 
 .rating-choice {
   background-color: var(--darkblue);
+  padding: rem(5);
+  border-radius: rem(7);
 
   &__message {
     color: var(--orange);

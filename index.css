@@ -43,7 +43,7 @@ main {
 }
 
 .rating-tab {
-  display: none;
+  display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
@@ -135,9 +135,13 @@ main {
   background-color: var(--orange);
   color: #fff;
 }
+.rate__button_checked {
+  background-color: var(--orange);
+  color: #fff;
+}
 
 .response-tab {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   width: 100%;
@@ -147,14 +151,31 @@ main {
 .response-tab__text {
   color: var(--mediumgrey);
   font-size: 0.9375rem;
+  margin-top: 0.9375rem;
+  text-align: center;
+}
+.response-tab__image {
+  width: 9.375rem;
+  height: 6.25rem;
+  margin-bottom: 0.9375rem;
+}
+.response-tab__image img {
+  width: 100%;
+  height: 100%;
+}
+.response-tab__rating-choice {
+  margin-bottom: 1.5625rem;
 }
 
 .thankyou-heading {
+  font-size: 1.25rem;
   color: #fff;
 }
 
 .rating-choice {
   background-color: var(--darkblue);
+  padding: 0.3125rem;
+  border-radius: 0.4375rem;
 }
 .rating-choice__message {
   color: var(--orange);
